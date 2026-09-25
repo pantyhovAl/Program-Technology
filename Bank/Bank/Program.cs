@@ -14,6 +14,7 @@
             account1.MakeWithdrawl(100, DateTime.UtcNow, "");
             Console.WriteLine($"{account1.Owner} {account1.Balance} {account1.Number}");
 
+            Console.WriteLine(account1.GetAccountHistory());
             try
             {
                 account2.MakeWithdrawl(1000000000000, DateTime.UtcNow, ""); 
