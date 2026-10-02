@@ -1,9 +1,8 @@
-﻿namespace Bank;
+﻿namespace bank;
 /// <summary>
-/// Тип данных, который запрещает менять состояние обьекта
+/// тип данных не изменяемый
 /// </summary>
-/// <param name="Amount"> сумма транзакции</param>
-/// <param name="Date"> дата транзакции</param>
-/// <param name="Note"> Заметка транзакции</param>
-internal record Transaction(decimal Amount, DateTime Date, string Note);
-
+/// <param name="Amount">Сумма транзакции</param>
+/// <param name="Date">Дата транзакции</param>
+/// <param name="Note">Заметка транзакции</param>
+public record Transaction(decimal Amount, DateTime Date, string Note);    
